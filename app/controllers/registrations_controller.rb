@@ -5,7 +5,7 @@ class RegistrationsController < Devise::RegistrationsController
 
     def respond_with(resource, opt = {})
       register_success && return if resource.persisted?
-      p resource.errors.full_messages
+      
       register_failed
     end
 
