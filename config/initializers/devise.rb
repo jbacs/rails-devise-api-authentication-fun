@@ -17,7 +17,7 @@ Devise.setup do |config|
   # config.secret_key = '4e60333b67eddff2443be6d3c052101b1a991ab852b7692400f13d1a2aea27071d72f2f1b95d469621fe39651a1d4492e720de95c96a427702862c4e512f0993'
 
   config.jwt do |jwt|
-    jwt.secret = ENV['jwt_secret_key']
+    jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
   end
 
   # ==> Controller configuration
